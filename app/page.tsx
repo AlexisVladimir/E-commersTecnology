@@ -17,17 +17,20 @@ const iconMap: Record<string, React.ReactNode> = {
 };
 
 export default async function HomePage() {
-  const [productsRes, categoriesRes] = await Promise.all([
+  const [productsRes, categoriesRes] = await Promise.allSettled([
     fetch(`${API_BASE}/catalog/products/?pageSize=100`, { cache: 'no-store' }),
     fetch(`${API_BASE}/catalog/categories/`, { cache: 'no-store' }),
   ]);
 
-  const productsData = productsRes.ok
-    ? ((await productsRes.json()) as { items: Product[] })
-    : { items: [] };
-  const categoriesData = categoriesRes.ok
-    ? ((await categoriesRes.json()) as { items: { name: string; icon?: string | null }[] })
-    : { items: [] };
+  const productsData: { items: Product[] } =
+    productsRes.status === 'fulfilled' && productsRes.value.ok
+      ? ((await productsRes.value.json()) as { items: Product[] })
+      : { items: [] };
+
+  const categoriesData: { items: { name: string; icon?: string | null }[] } =
+    categoriesRes.status === 'fulfilled' && categoriesRes.value.ok
+      ? ((await categoriesRes.value.json()) as { items: { name: string; icon?: string | null }[] })
+      : { items: [] };
 
   const products = productsData.items;
   const categories = categoriesData.items;
