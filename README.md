@@ -29,7 +29,7 @@ Diseñada con un enfoque oscuro, elegante y totalmente responsiva.
 
 ## 📋 Descripción
 
-**TechStore** es una aplicación web de comercio electrónico especializada en electrónica premium: laptops, smartphones, audífonos, periféricos, accesorios gaming y más. El proyecto cuenta con un sistema completo de autenticación, carrito de compras persistente, catálogo con filtros avanzados, checkout con integración de PayPal y un panel de administración para gestión de productos.
+**TechStore** es una aplicación web de comercio electrónico especializada en electrónica premium: laptops, smartphones, audífonos, periféricos, accesorios gaming y más. El proyecto incluye autenticación completa, carrito persistente, catálogo con filtros avanzados, checkout con integración de PayPal y un panel de administración para gestión de productos.
 
 La interfaz utiliza un diseño oscuro moderno con acento azul, optimizado para una experiencia premium tanto en escritorio como en dispositivos móviles.
 
@@ -64,7 +64,7 @@ La interfaz utiliza un diseño oscuro moderno con acento azul, optimizado para u
   Resolución sugerida: 1440 x 800px.
 -->
 
-![Página principal](assets/screenshots/home-hero.png)
+![Página principal](assets/screenshots/hero.png)
 
 ---
 
@@ -108,18 +108,53 @@ La interfaz utiliza un diseño oscuro moderno con acento azul, optimizado para u
 ![Carrito de compras](assets/screenshots/cart-drawer.png)
 
 ---
-
-### Proceso de Checkout
+### Checkout. Paso 1: Ingreso de datos
 
 <!-- 
-  📸 IMAGEN RECOMENDADA — Checkout
-  Archivo: assets/screenshots/checkout.png
-  Qué capturar: La página /checkout en el paso de "Shipping Information",
-  con el formulario de datos de envío a la izquierda y el resumen del pedido
-  a la derecha. Si puedes, muestra los 3 pasos en la barra de progreso superior.
+  
+-->
+
+![Carrito de compras](assets/screenshots/cart-drawer1.png)
+
+---
+
+### Checkout. Paso 2: Seleccion metodo de pago
+
+<!-- 
+
 -->
 
 ![Proceso de checkout](assets/screenshots/checkout.png)
+
+---
+
+### Checkout. Paso 2.1: Generacion de orden de pago
+
+<!-- 
+
+-->
+
+![Proceso de checkout](assets/screenshots/checkout1.png)
+
+---
+
+### Checkout. Paso 3: Pago exitoso
+
+<!-- 
+
+-->
+
+![Proceso de checkout](assets/screenshots/checkout2.png)
+
+---
+
+### Checkout. Paso 3.1: Mail de pago exitoso
+
+<!-- 
+
+-->
+
+![Proceso de checkout](assets/screenshots/checkout3.png)
 
 ---
 
@@ -133,7 +168,7 @@ La interfaz utiliza un diseño oscuro moderno con acento azul, optimizado para u
   el formulario de "Sign In" o el de "Create Account".
 -->
 
-![Autenticación](assets/screenshots/auth-modal.png)
+![Autenticación](assets/screenshots/auth-modal1.png)
 
 ---
 
@@ -147,11 +182,11 @@ La interfaz utiliza un diseño oscuro moderno con acento azul, optimizado para u
   del usuario visible.
 -->
 
-![Panel de cuenta](assets/screenshots/account.png)
+![Panel de cuenta](assets/screenshots/account1.png)
 
 ---
 
-### Vista en móvil
+### Vista en movil
 
 <!-- 
   📸 IMAGEN RECOMENDADA — Responsive / Móvil
@@ -161,7 +196,13 @@ La interfaz utiliza un diseño oscuro moderno con acento azul, optimizado para u
   Muestra la navbar y las tarjetas de producto en columna única.
 -->
 
-![Vista móvil](assets/screenshots/mobile.png)
+![Vista movil](assets/screenshots/mobile1.png)
+
+---
+
+### Video de funcionamiento
+
+[Ver video en Google Drive](https://drive.google.com/file/d/15rEa0CX8h07SEpbI9q9bGe_jJ3HWV0Kt/view?usp=sharing)
 
 ---
 
